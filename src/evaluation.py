@@ -1,0 +1,7 @@
+from sklearn.metrics import classification_report, confusion_matrix
+
+
+def evaluate(y_true, y_pred, name):
+    print(f"\n{name} Results")
+    print(confusion_matrix(y_true, y_pred))
+    print(classification_report(y_true, y_pred))
