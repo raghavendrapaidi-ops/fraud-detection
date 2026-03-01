@@ -49,7 +49,7 @@ def main():
     pca_plot(X, iso_preds, "Isolation Forest")
 
     print("Running LOF...")
-    lof_preds = run_lof(X)
+    lof_preds = run_lof(X, y)
     print_results("LOF", y, lof_preds)
     pca_plot(X, lof_preds, "LOF")
 
